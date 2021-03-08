@@ -32,4 +32,9 @@ public class WordCounter
             counts.put(word, counter + 1);
         }
     }
+    
+    public void userWords() {
+        System.out.println("palabras escritas por el usuario: " +
+        counts);
+    }
 }
