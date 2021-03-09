@@ -34,7 +34,9 @@ public class WordCounter
     }
     
     public void userWords() {
-        System.out.println("palabras escritas por el usuario: " +
-        counts);
+        System.out.println("palabras usadas por el usuario: ");
+        for(String palabra : counts.keySet()){
+            System.out.println(palabra + " = " + counts.get(palabra));
+        }
     }
 }
