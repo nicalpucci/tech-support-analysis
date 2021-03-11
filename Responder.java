@@ -143,4 +143,15 @@ public class Responder
         int index = randomGenerator.nextInt(defaultResponses.size());
         return defaultResponses.get(index);
     }
+    
+    /**
+     * para devolver las claves de responseMap
+     */
+    public HashSet<String> devolverHashMap(){
+        HashSet<String> claves = new HashSet <String>();
+        for(String key : responseMap.keySet()){
+            claves.add(key);
+        }
+        return claves;        
+    }
 }
